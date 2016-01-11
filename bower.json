@@ -2,7 +2,7 @@
   "name": "sass-responsive-grid",
   "description": "Responsive grid layout via custom elements",
   "main": "dist/responsive.grid.css",
-  "version":"1.0.3",
+  "version":"1.0.4",
   "authors": [
     "S. Francis"
   ],

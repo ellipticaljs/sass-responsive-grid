@@ -1,7 +1,7 @@
 {
   "name": "sass-responsive-grid",
   "description": "Responsive grid layout via custom elements",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "sass-media-query": "git+https://github.com/ellipticaljs/sass-media-query.git",
-    "sass-utility": "git+https://github.com/ellipticaljs/sass-utility.git"
+    "sass-functions": "git+https://github.com/ellipticaljs/sass-functions.git",
+    "sass-mixins": "git+https://github.com/ellipticaljs/sass-mixins.git"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
