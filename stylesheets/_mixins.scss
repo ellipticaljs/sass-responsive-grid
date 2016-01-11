@@ -1,0 +1,92 @@
+@import "variables";
+
+
+/// @access public
+@mixin gutter-bleed(){
+  $_column-gutter:map-get($Grid,column-gutter);
+  margin-right: - $_column-gutter/2 !important;
+  margin-left: - $_column-gutter/2 !important;
+  width:108%;
+  @content;
+}
+
+/// @access public
+@mixin gutter-bleed-padding($padding-left:1.5em,$padding-right:1.5em){
+  $_column-gutter:map-get($Grid,column-gutter);
+  margin-right: - $_column-gutter/2 !important;
+  margin-left: - $_column-gutter/2 !important;
+  padding-left:$padding-left;
+  padding-right:$padding-right;
+  width:110%;
+  @content;
+}
+
+/// @access public
+@mixin gutter-collapse(){
+  padding-left:0;
+  padding-right:0;
+  @content;
+}
+
+/// @access public
+@mixin touch-gutter-bleed(){
+  @include touch-content(){
+    @include gutter-bleed();
+    @content;
+  }
+}
+
+/// @access public
+@mixin touch-gutter-bleed-padding($padding-left:1.5em,$padding-right:1.5em){
+  @include touch-content(){
+    @include gutter-bleed-padding($padding-left,$padding-right);
+    @content;
+  }
+}
+
+/// @access public
+@mixin touch-gutter-collapse(){
+  @include touch-content(){
+    @include gutter-collapse();
+    @content;
+  }
+}
+
+@mixin constrain-to-grid(){
+  margin:0 auto;
+  max-width:map-get($Grid,width) - map-get($Grid,column-gutter);
+}
+
+/// @access public
+@mixin grid-classes() {
+  .contain-to-grid {
+    max-width: map-get($Grid,width) - map-get($Grid,column-gutter);
+    margin: 0 auto;
+  }
+
+  .touch-gutter-bleed {
+    @include touch-gutter-bleed();
+  }
+
+  .touch-gutter-bleed-padding {
+    @include touch-gutter-bleed-padding();
+  }
+
+  .touch-gutter-collapse {
+    @include touch-gutter-collapse();
+  }
+
+  .gutter-bleed{
+    @include gutter-bleed();
+  }
+
+  .gutter-bleed-padding{
+    @include gutter-bleed-padding();
+  }
+
+  .gutter-collapse{
+    @include gutter-collapse();
+  }
+
+}
+

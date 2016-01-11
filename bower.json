@@ -1,0 +1,50 @@
+{
+  "name": "sass-responsive-grid",
+  "description": "Sass Responsive Flexbox",
+  "main": "dist/responsive.flexbox.css",
+  "version":"1.0.2",
+  "authors": [
+    "S. Francis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "responsive",
+    "flexbox",
+    "css"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/ellipticaljs/sass-responsive-flexbox",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".gitignore",
+    ".npmignore",
+    "gulpfile.js",
+    "lib",
+    "docs",
+    "index.js",
+    "umd.js",
+    "package.json",
+    "demo",
+    "index.html",
+    "build.json",
+    "bundle.json",
+    ".nvmrc",
+    ".eslintrc",
+    "bin",
+    "CHANGELOG.md",
+    "demos",
+    "stylesheets",
+    "_index.scss",
+    "_settings.scss",
+    "bk",
+    "sassdoc",
+    "test.scss"
+  ],
+  "dependencies": {
+    "elliptical-css-register": "~1.0.4"
+  }
+}
