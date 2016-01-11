@@ -1,8 +1,8 @@
 {
   "name": "sass-responsive-grid",
-  "description": "Sass Responsive Flexbox",
-  "main": "dist/responsive.flexbox.css",
-  "version":"1.0.2",
+  "description": "Responsive grid layout via custom elements",
+  "main": "dist/responsive.grid.css",
+  "version":"1.0.3",
   "authors": [
     "S. Francis"
   ],
@@ -13,7 +13,7 @@
     "css"
   ],
   "moduleType": [],
-  "homepage": "https://github.com/ellipticaljs/sass-responsive-flexbox",
+  "homepage": "https://github.com/ellipticaljs/sass-responsive-grid",
   "ignore": [
     "**/.*",
     "node_modules",
