@@ -1,7 +1,7 @@
 {
   "name": "sass-responsive-grid",
   "description": "Responsive grid layout via custom elements",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
