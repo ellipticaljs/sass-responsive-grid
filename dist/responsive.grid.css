@@ -596,12 +596,10 @@ grid-columns.no-gutter {
     float: left !important; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 220px) {
-  grid-row {
+  grid-row.overflow-hidden {
     overflow-x: hidden; }
-    grid-row.overflow {
-      overflow-x: visible; }
-    grid-row.padding {
-      padding-bottom: 1em; }
+  grid-row.padding {
+    padding-bottom: 1em; }
   grid-columns.no-gutter {
     padding-left: 0;
     padding-right: 0; } }

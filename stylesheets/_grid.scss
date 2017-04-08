@@ -278,10 +278,8 @@ $touch-margin-bottom:null) {
   @if $touch-horizontal-constrain {
     @include touch-content(){
       grid-row {
-        overflow-x: hidden;
-        &.overflow {
-          ///re-enable on per row basis, if needed
-          overflow-x: visible;
+        &.overflow-hidden {
+          overflow-x: hidden;
         }
         &.padding{
           padding-bottom:1em;
